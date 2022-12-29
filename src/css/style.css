@@ -6,7 +6,7 @@ html {
 
 p {
     font-family: "Iosevka", sans-serif;
-    color: #000000;
+    color: #a9a9b3;
     font-size: 1rem;
     line-height: 1.25;
 }
@@ -14,6 +14,6 @@ p {
 h1,
 h2 {
     font-family: "Iosevka", monospace;
-    color: #000000;
+    color: #a9a9b3;
     padding-top: 1rem;
 }
