@@ -1,23 +1,16 @@
 /* Global CSS */
 
-a,
-a:focus,
-a:hover {
+h1,
+h2 {
+    font-family: "Iosevka", monospace;
     color: #ffffff;
+    padding: 1.5rem;
 }
 
 p {
     font-family: "Iosevka", sans-serif;
     color: #a9a9b3;
     font-size: 1rem;
-}
-
-
-h1,
-h2 {
-    font-family: "Iosevka", monospace;
-    color: #ffffff;
-    padding: 1.5rem;
 }
 
 /* Structure */
@@ -27,19 +20,19 @@ body {
     height: 100%;
 }
 
-body {
+#body-front {
     text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
     box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
 }
+
+footer {
+    padding: 3rem 1rem;
+}
+
+/* Other */
 
 .nav-item {
     font-family: "Iosevka", sans-serif;
     font-weight: 700;
     font-size: 1.25rem;
-}
-
-
-
-footer {
-    padding: 3rem 1rem;
 }
