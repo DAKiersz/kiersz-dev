@@ -1,8 +1,8 @@
-# Title
+# kiersz.dev
 
 **Version:** 0.1
 
-**Last Updated:** 29 December 2022
+**Last Updated:** 19 Jan 2022
 
 **Developer(s):** Dominik Kiersz
 
