@@ -1,8 +1,8 @@
-# Title
+# kiersz.dev
 
-**Version:** 0.1
+**Version:** 1.0
 
-**Last Updated:** 29 December 2022
+**Last Updated:** 31 Jan 2022
 
 **Developer(s):** Dominik Kiersz
 
@@ -16,7 +16,8 @@ Active
 
 ## To Add / Fix
 
-* CV
+* CV (link to PDF)
+* Blog (link)
 
 ## Licence
 
