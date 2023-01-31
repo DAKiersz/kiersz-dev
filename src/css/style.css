@@ -1,10 +1,9 @@
 /* Typography */
 
-h1,
-h2 {
+h1 {
     font-family: "Iosevka", monospace;
     color: #ffffff;
-    padding: 1.5rem;
+    padding-top: 1.25rem;
 }
 
 p {
