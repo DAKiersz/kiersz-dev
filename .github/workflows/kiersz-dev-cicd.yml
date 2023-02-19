@@ -4,8 +4,8 @@ on:
   push:
     branches:
       - production
+      - feature/**
 
-# job to upload to ftp
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -16,8 +16,8 @@ jobs:
       - name: Upload via FTP
         uses: SamKirkland/FTP-Deploy-Action@4.3.3
         with:
-          server: ${{ secrets.PORKBUN_FTP_SERVER }}
+          server: ${{ secrets.PORKBUN_FTP_HOSTNAME }}
           username: ${{ secrets.PORKBUN_FTP_USERNAME }}
           password: ${{ secrets.PORKBUN_FTP_PASSWORD }}
-          local-dir: ./src
-          server-dir: /src
+          local-dir: ./src/
+          server-dir: /src/
