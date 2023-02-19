@@ -1,13 +1,13 @@
 /* Typography */
 
 h1 {
-    font-family: "Iosevka", monospace;
+    font-family: "Iosevka", "Noto Sans Display", Verdana, monospace;
     color: #ffffff;
     padding-top: 1.25rem;
 }
 
 p {
-    font-family: "Iosevka", sans-serif;
+    font-family: "Iosevka", "Noto Sans Display", sans-serif;
     color: #a9a9b3;
     font-size: 1rem;
 }
