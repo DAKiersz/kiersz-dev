@@ -1,14 +1,16 @@
 # kiersz.dev
 
-**Version:** 1.0
+[![Deploy Frontpage](https://github.com/DAKiersz/kiersz-dev/actions/workflows/kiersz-dev-cicd.yml/badge.svg)](https://github.com/DAKiersz/kiersz-dev/actions/workflows/kiersz-dev-cicd.yml)
 
-**Last Updated:** 31 Jan 2022
+**Version:** 1.1
+
+**Last Updated:** 19 Feb 2023
 
 **Developer(s):** Dominik Kiersz
 
 ## Description
 
-This repository contains the sourcecode for my CV/portfolio website, kiersz.dev
+This repository contains the sourcecode for my CV/portfolio website, [kiersz.dev](https://kiersz.dev)
 
 ## Project Status
 
@@ -16,8 +18,8 @@ Active
 
 ## To Add / Fix
 
-* CV (link to PDF)
-* Blog (link)
+* A page for publications / misc. projects?
+* Certificate collection page?
 
 ## Licence
 

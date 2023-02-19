@@ -1,4 +1,4 @@
-name: Deploy Frontpage
+name: Frontpage CICD
 
 on:
   push:
