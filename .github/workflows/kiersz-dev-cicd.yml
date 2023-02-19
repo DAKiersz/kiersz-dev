@@ -1,0 +1,23 @@
+name: Deploy Frontpage
+
+on:
+  push:
+    branches:
+      - production
+
+# job to upload to ftp
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: true
+      - name: Upload via FTP
+        uses: SamKirkland/FTP-Deploy-Action@4.3.3
+        with:
+          server: ${{ secrets.PORKBUN_FTP_SERVER }}
+          username: ${{ secrets.PORKBUN_FTP_USERNAME }}
+          password: ${{ secrets.PORKBUN_FTP_PASSWORD }}
+          local-dir: ./src
+          server-dir: /src
