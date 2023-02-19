@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 * Added CV link.
 * Added a functional CI/CD pipeline with a badge in README.md
+* Added backup font from Google CDN.
 
 ### Changed
 
