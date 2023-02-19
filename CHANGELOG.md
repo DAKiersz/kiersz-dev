@@ -9,8 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added 
 
-* Added CV
-* Added functional CI/CD pipeline with a badge.
+* Added CV link.
+* Added a functional CI/CD pipeline with a badge in README.md
 
 ### Changed
 
@@ -20,7 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-* Email link added, CV to be added.
+* Email and blog links added.
 ### Fixed
 
 * Iosevka font not loading correctly.
@@ -29,5 +29,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-* Frontpage added, in progress.
-* Project structure.
+* Initial frontpage added - in progress.
