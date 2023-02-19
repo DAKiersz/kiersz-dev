@@ -24,12 +24,9 @@ body {
     flex-direction: column;
 }
 
-/* Background grey with shadow */
+/* Background */
 #body-front {
-    background-color: #1e1e2b;
-    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-    box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
-    flex: 1 0 auto;
+    background-color: #2a2a3d;
 }
 
 footer {
@@ -39,7 +36,7 @@ footer {
 /* Other */
 
 .nav-item {
-    font-family: "Iosevka", sans-serif;
+    font-family: "Iosevka", "Noto Sans Display", sans-serif;
     font-weight: 700;
     font-size: 1.25rem;
 }

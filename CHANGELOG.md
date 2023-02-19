@@ -5,12 +5,23 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## Version 1.1
+
+### Added 
+
+* Added CV link.
+* Added a functional CI/CD pipeline with a badge in README.md
+* Added backup font from Google CDN.
+
+### Changed
+
+* Removed backgroud gradient.
 
 ## Version 1.0
 
 ### Added
 
-* Email link added, CV to be added.
+* Email and blog links added.
 ### Fixed
 
 * Iosevka font not loading correctly.
@@ -19,5 +30,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-* Frontpage added, in progress.
-* Project structure.
+* Initial frontpage added - in progress.
