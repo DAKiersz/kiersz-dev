@@ -7,7 +7,7 @@ on:
 
 jobs:
   deploy:
-    name: Deploy Frontpage Job
+    name: Deploy Frontpage
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
