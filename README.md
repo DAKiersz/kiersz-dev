@@ -2,6 +2,8 @@
 
 [![Deploy Frontpage](https://github.com/DAKiersz/kiersz-dev/actions/workflows/kiersz-dev-cicd.yml/badge.svg)](https://github.com/DAKiersz/kiersz-dev/actions/workflows/kiersz-dev-cicd.yml)
 
+[![CV Test](https://github.com/DAKiersz/kiersz-dev/actions/workflows/cv-build.yml/badge.svg)](https://github.com/DAKiersz/kiersz-dev/actions/workflows/cv-build.yml)
+
 **Version:** 1.1
 
 **Last Updated:** 19 Feb 2023
