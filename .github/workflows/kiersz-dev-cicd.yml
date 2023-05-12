@@ -19,5 +19,5 @@ jobs:
           server: ${{ secrets.PORKBUN_FTP_HOSTNAME }}
           username: ${{ secrets.PORKBUN_FTP_USERNAME }}
           password: ${{ secrets.PORKBUN_FTP_PASSWORD }}
-          local-dir: ./src/
-          server-dir: /src/
+          local-dir: ./frontpage/
+          server-dir: /frontpage/
