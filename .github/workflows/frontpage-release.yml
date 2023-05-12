@@ -16,12 +16,10 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v3
-
-      - name: Change Directory to cv
-        run: cd cv
-
+        
       - name: Build CV With xelatex in Makefile
         run: make
+        working-directory: ./cv
 
       - name: Move CV to frontpage/
         run: mv /cv/src/kiersz-cv.pdf /frontpage/kiersz-cv.pdf
