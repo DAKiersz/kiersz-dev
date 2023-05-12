@@ -16,25 +16,25 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v3
-        
+
       - name: Build CV With xelatex in Makefile
         run: make
         working-directory: ./cv
 
       - name: Move CV to frontpage/
-        run: mv /cv/src/kiersz-cv.pdf /frontpage/kiersz-cv.pdf
+        run: mv cv/src/kiersz-cv.pdf frontpage/kiersz-cv.pdf
 
       - name: Upload Artifact - CV
         uses: actions/upload-artifact@v3
         with:
           name: kiersz-cv
-          path: /frontpage/kiersz-cv.pdf
+          path: frontpage/kiersz-cv.pdf
 
       - name: Upload Arfifact - Frontpage with CV 
         uses: actions/upload-artifact@v3
         with:
           name: kiersz-cv
-          path: /frontpage/
+          path: frontpage/
 
   deploy:
     name: Job - Deploy Frontpage and CV
