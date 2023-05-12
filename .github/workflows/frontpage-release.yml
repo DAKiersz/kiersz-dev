@@ -33,7 +33,7 @@ jobs:
       - name: Upload Arfifact - Frontpage with CV 
         uses: actions/upload-artifact@v3
         with:
-          name: kiersz-cv
+          name: frontpage-cv
           path: frontpage/
 
   deploy:
