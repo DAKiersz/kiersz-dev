@@ -10,7 +10,7 @@ on:
 
 jobs:
   build:
-    name: Build CV
+    name: Job - Build CV
     runs-on: ubuntu-latest
     container: texlive/texlive:latest
     steps:
@@ -20,36 +20,36 @@ jobs:
       - name: Change Directory to cv
         run: cd cv
 
-      - name: Build CV With xelatex in Makefile in 
+      - name: Build CV With xelatex in Makefile
         run: make
 
       - name: Move CV to frontpage/
         run: mv /cv/src/kiersz-cv.pdf /frontpage/kiersz-cv.pdf
 
-      - name: Upload an CV Arfifact
+      - name: Upload Artifact - CV
         uses: actions/upload-artifact@v3
         with:
           name: kiersz-cv
           path: /frontpage/kiersz-cv.pdf
 
-      - name: Upload a Frontpage with CV Arfifact
+      - name: Upload Arfifact - Frontpage with CV 
         uses: actions/upload-artifact@v3
         with:
           name: kiersz-cv
           path: /frontpage/
 
   deploy:
-    name: Deploy Frontpage and CV
+    name: Job - Deploy Frontpage and CV
     runs-on: ubuntu-latest
     needs: build
     if: github.ref == 'refs/heads/production' && github.event_name == 'push'
     steps:
-      - name: Download Frontpage with CV Artifact
+      - name: Download Arfifact - Frontpage with CV
         uses: actions/download-artifact@v2
         with:
           name: frontpage-cv
           path: ./frontpage
-      - name: Upload via FTP
+      - name: FTP - Deploy Frontpage
         uses: SamKirkland/FTP-Deploy-Action@4.3.3
         with:
           server: ${{ secrets.PORKBUN_FTP_HOSTNAME }}
