@@ -1,0 +1,40 @@
+name: CV Main
+
+on:
+  push:
+    branches:
+      - production
+
+jobs:
+  build:
+    name: Build and Upload CV
+    runs-on: ubuntu-latest
+    container: texlive/texlive:latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+
+      - name: Build CV With xelatex in Makefile
+        run: make
+
+      - name: Move CV to out/
+        run: mkdir out && mv ./src/kiersz-cv.pdf out/
+
+      - name: Upload an Arfifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: kiersz-cv
+          path: out/kiersz-cv.pdf
+
+      - name: Upload to frontpage via FTP
+        uses: SamKirkland/FTP-Deploy-Action@4.3.3
+        with:
+          server: ${{ secrets.PORKBUN_FTP_HOSTNAME }}
+          username: ${{ secrets.PORKBUN_FTP_USERNAME }}
+          password: ${{ secrets.PORKBUN_FTP_PASSWORD }}
+          local-dir: out/
+          server-dir: /cv/
+
+      - name: Clean Up SRC_DIR
+        run: make clean
