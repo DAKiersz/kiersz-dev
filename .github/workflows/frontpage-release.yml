@@ -22,7 +22,7 @@ jobs:
         working-directory: ./cv
 
       - name: Move CV to frontpage/
-        run: mv cv/src/kiersz-cv.pdf frontpage/cv/kiersz-cv.pdf
+        run: mkdir -p frontpage/cv && mv cv/src/kiersz-cv.pdf frontpage/cv/kiersz-cv.pdf
 
       - name: Upload Artifact - CV
         uses: actions/upload-artifact@v3
