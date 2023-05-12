@@ -2,5 +2,5 @@
     font-family: "Iosevka";
     src: local("Iosevka Regular"),
         local("Iosevka-Regular"),
-        url("/frontpage/css/fonts/iosevka-regular.woff2") format('woff2');
+        url("/css/fonts/iosevka-regular.woff2") format('woff2');
 }
