@@ -2,7 +2,7 @@
 
 [![Frontpage Release](https://github.com/DAKiersz/kiersz-dev/actions/workflows/frontpage-release.yml/badge.svg)](https://github.com/DAKiersz/kiersz-dev/actions/workflows/frontpage-release.yml)
 
-**Version:** 1.2
+**Version:** 1.2.0
 
 **Last Updated:** 12 May 2023
 
