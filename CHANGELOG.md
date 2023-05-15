@@ -17,7 +17,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-* Overhauled CICD ()`frontpage-release.yml`) bto build the CV and deploy it with the website in the same pipeline.
+* Overhauled CICD (`frontpage-release.yml`) bto build the CV and deploy it with the website in the same pipeline.
+
+## Version 1.2
+
+### Added
+
+* Sample cover-letter added.
 
 ## Version 1.1.0
 
