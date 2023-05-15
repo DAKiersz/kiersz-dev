@@ -2,9 +2,9 @@
 
 [![Frontpage Release](https://github.com/DAKiersz/kiersz-dev/actions/workflows/frontpage-release.yml/badge.svg)](https://github.com/DAKiersz/kiersz-dev/actions/workflows/frontpage-release.yml)
 
-**Version:** 1.2.0
+**Version:** 1.3.0
 
-**Last Updated:** 12 May 2023
+**Last Updated:** 15th May 2023
 
 **Developer(s):** Dominik Kiersz
 
