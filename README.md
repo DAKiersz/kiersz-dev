@@ -1,6 +1,8 @@
 # kiersz.dev
 
 [![Frontpage Release](https://github.com/DAKiersz/kiersz-dev/actions/workflows/frontpage-release.yml/badge.svg)](https://github.com/DAKiersz/kiersz-dev/actions/workflows/frontpage-release.yml)
+![Website](https://img.shields.io/website?down_color=red&down_message=offline&label=kiersz.dev&up_color=blue&up_message=online&url=https%3A%2F%2Fkiersz.dev%2F)
+
 
 **Version:** 1.3.0
 
