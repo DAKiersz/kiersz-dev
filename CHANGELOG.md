@@ -9,8 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-Updated the CV to reflect my current position.
-
+* Updated the CV to reflect my current position.
+* Update badges
 
 ## Version 1.3.0
 
