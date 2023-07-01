@@ -18,11 +18,6 @@ This repository contains the sourcecode for my frontpage website, [kiersz.dev](h
 
 Active
 
-## To Add / Fix
-
-* A page for publications / misc. projects?
-* Certificate collection page?
-
 ## Licence
 
 [GNU GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html)
