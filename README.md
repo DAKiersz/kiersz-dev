@@ -6,7 +6,7 @@
 
 **Version:** 1.4.0
 
-**Last Updated:**  22th June 2023
+**Last Updated:** 1st July 2023
 
 **Developer(s):** Dominik Kiersz
 
