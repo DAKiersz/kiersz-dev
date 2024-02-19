@@ -1,0 +1,46 @@
+/* Typography */
+
+h1 {
+    font-family: "Iosevka", "Noto Sans Display", Verdana, monospace;
+    color: #ffffff;
+    padding-top: 1.25rem;
+}
+
+p {
+    font-family: "Iosevka", "Noto Sans Display", sans-serif;
+    color: #a9a9b3;
+    font-size: 1rem;
+}
+
+/* Structure */
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Background */
+#body-front {
+    background-color: #2a2a3d;
+}
+
+footer {
+    padding: 3rem 1rem;
+}
+
+/* Other */
+
+.nav-item {
+    font-family: "Iosevka", "Noto Sans Display", sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+ul {
+    list-style-type: none;
+}

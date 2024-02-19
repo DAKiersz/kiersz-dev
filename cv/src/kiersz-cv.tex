@@ -1,0 +1,87 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+%
+% Awesome CV LaTeX Template for CV/Resume
+% Original Template Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Template Mods / CV Author:
+% Dominik A. Kiersz <>
+% https://kiersz.dev
+
+%-------------------------------------------------------------------------------
+% PREMABLE
+%-------------------------------------------------------------------------------
+
+\documentclass[11pt, a4paper]{awesome-cv-mod}
+\geometry{left=1.8cm, top=.8cm, right=1.8cm, bottom=1.8cm, footskip=.5cm}
+
+% Colors
+\colorlet{awesome}{awesome-darknight}
+% \definecolor{awesome}{HTML}{22232C}
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+% \definecolor{sectiondivider}{HTML}{5D5D5D}
+
+\name{Dominik A.}{Kiersz}
+\position{Platform Engineer {\enskip\cdotp\enskip} focused on DevOps and InfraOps {\enskip\cdotp\enskip} MPhys (Hons)}
+%\email{}
+\homepage{kiersz.dev}
+\github{DAKiersz}
+\linkedin{DAKiersz}
+\twitter{@DAKiersz}
+\orcid{0000-0001-5787-9034}
+% \gitlab{DAKiersz}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+%\extrainfo{}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{false}
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+% Define the hyperlink colour
+\definecolor{nordic}{HTML}{565a75}
+\hypersetup{
+  colorlinks,
+  allcolors=.,
+  urlcolor=nordic,
+}
+
+%-------------------------------------------------------------------------------
+%	DOCUMENT
+%-------------------------------------------------------------------------------
+
+\begin{document}
+
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {}
+  {Dominik A. Kiersz~~~·~~~Curriculum Vitae}
+  {\thepage}
+
+\input{sections/experience.tex}
+\input{sections/education.tex}
+\input{sections/certificates.tex}
+\newpage
+\input{sections/skills.tex}
+\input{sections/projects.tex}
+\input{sections/presentation.tex}
+\input{sections/references.tex}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
