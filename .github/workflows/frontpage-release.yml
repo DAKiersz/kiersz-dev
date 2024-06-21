@@ -1,4 +1,4 @@
-name: Frontpage Release
+name: frontpage-release
 
 # push on any branch
 on:
@@ -12,11 +12,11 @@ on:
 jobs:
   build:
     name: Job - Build CV
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     container: texlive/texlive:latest
     steps:
-      - name: Checkout Repo
-        uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v692973e3d937129bcbf40652eb9f2f61becf3332
 
       - name: Build CV With xelatex in Makefile
         run: make
@@ -26,13 +26,13 @@ jobs:
         run: mkdir -p frontpage/cv && mv cv/src/kiersz-cv.pdf frontpage/cv/kiersz-cv.pdf
 
       - name: Upload Artifact - CV
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v65462800fd760344b1a7b4382951275a0abb4808
         with:
           name: kiersz-cv
           path: frontpage/cv/kiersz-cv.pdf
 
       - name: Upload Arfifact - Frontpage with CV 
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v65462800fd760344b1a7b4382951275a0abb4808
         with:
           name: frontpage-cv
           path: frontpage/
@@ -44,12 +44,12 @@ jobs:
     if: (github.event_name == 'push' && github.ref == 'refs/heads/main') || (github.event_name == 'pull_request' && github.event.action != 'closed')
     steps:
       - name: Download Arfifact - Frontpage with CV
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v65a9edc5881444af0b9093a5e628f2fe47ea3b2e
         with:
           name: frontpage-cv
           path: ${{ github.repository }}/frontpage
       - name: Deploy - Azure Static Web Apps
-        uses: Azure/static-web-apps-deploy@v1
+        uses: Azure/static-web-apps-deploy@vc514ae36604047560e33605b78f71804967bfb7a
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
           action: "upload"
@@ -57,3 +57,16 @@ jobs:
           output_location: ""
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           skip_app_build: true
+
+  close_pull_request_job:
+    name: Job - Close Pull Request Job
+    runs-on: ubuntu-22.04
+    needs: build
+    if: github.event_name == 'pull_request' && github.event.action == 'closed'
+    steps:
+      - name: Close Pull Request
+        id: closepullrequest
+        uses: Azure/static-web-apps-deploy@vc514ae36604047560e33605b78f71804967bfb7a
+        with:
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
+          action: "close"
