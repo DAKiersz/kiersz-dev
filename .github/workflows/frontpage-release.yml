@@ -16,7 +16,7 @@ jobs:
     container: texlive/texlive:latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v692973e3d937129bcbf40652eb9f2f61becf3332
+        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332
 
       - name: Build CV With xelatex in Makefile
         run: make
@@ -26,13 +26,13 @@ jobs:
         run: mkdir -p frontpage/cv && mv cv/src/kiersz-cv.pdf frontpage/cv/kiersz-cv.pdf
 
       - name: Upload Artifact - CV
-        uses: actions/upload-artifact@v65462800fd760344b1a7b4382951275a0abb4808
+        uses: actions/upload-artifact@65462800fd760344b1a7b4382951275a0abb4808
         with:
           name: kiersz-cv
           path: frontpage/cv/kiersz-cv.pdf
 
       - name: Upload Arfifact - Frontpage with CV 
-        uses: actions/upload-artifact@v65462800fd760344b1a7b4382951275a0abb4808
+        uses: actions/upload-artifact@65462800fd760344b1a7b4382951275a0abb4808
         with:
           name: frontpage-cv
           path: frontpage/
@@ -44,12 +44,12 @@ jobs:
     if: (github.event_name == 'push' && github.ref == 'refs/heads/main') || (github.event_name == 'pull_request' && github.event.action != 'closed')
     steps:
       - name: Download Arfifact - Frontpage with CV
-        uses: actions/download-artifact@v65a9edc5881444af0b9093a5e628f2fe47ea3b2e
+        uses: actions/download-artifact@65a9edc5881444af0b9093a5e628f2fe47ea3b2e
         with:
           name: frontpage-cv
           path: ${{ github.repository }}/frontpage
       - name: Deploy - Azure Static Web Apps
-        uses: Azure/static-web-apps-deploy@vc514ae36604047560e33605b78f71804967bfb7a
+        uses: Azure/static-web-apps-deploy@c514ae36604047560e33605b78f71804967bfb7a
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
           action: "upload"
@@ -66,7 +66,7 @@ jobs:
     steps:
       - name: Close Pull Request
         id: closepullrequest
-        uses: Azure/static-web-apps-deploy@vc514ae36604047560e33605b78f71804967bfb7a
+        uses: Azure/static-web-apps-deploy@c514ae36604047560e33605b78f71804967bfb7a
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
           action: "close"
